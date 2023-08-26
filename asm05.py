@@ -356,7 +356,7 @@ def run(code=str, stopwhenerror=int|None, processcompletedialog=int|None):
                 if stopwhenerror == 0: break
         counter += 1
     if stopwhenerror == 1 and processcompletedialog == 1:
-        getpass.getpass("Press ENTER to close the window (exit code 0)")
+        getpass.getpass("Press ENTER to close the window.")
         exit(0)
 if __name__ == "__main__":
     args = sys.argv
@@ -367,7 +367,7 @@ if __name__ == "__main__":
         c = open(path, "r").read()
         run(c, 1)
     else:
-        print("ASM0.5 [Version 1.2]\nType \"help\" for help.")
+        print("ASM0.5 [Version 1.2]\nType \"help\" for help.\nThis is depecrated. Download from https://github.com/Kin1009/miniterm")
         while True:
             c = ""
             while True:
